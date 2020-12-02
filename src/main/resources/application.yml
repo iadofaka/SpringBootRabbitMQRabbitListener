@@ -1,0 +1,19 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    params:
+      exchange: MX-Baas-Santander
+      queue: Terminos&Condiciones
+  datasource:
+    url: jdbc:h2:mem:jpadb
+    driver-class-name: org.h2.Driver
+    data-username: sa
+    data-password: mypass
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+server:
+  port: 8081
+
